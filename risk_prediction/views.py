@@ -18,7 +18,7 @@ class PostFactorsView(CreateAPIView):
         serializer.is_valid(raise_exception=True)
         # self.perform_create(serializer)
 
-        prediction = models.Prediction.objects.create(risk_value=99)
+        prediction = models.Prediction.objects.create(risk_value=58)
 
         headers = self.get_success_headers(serializer.data)
         return redirect(f'/api/prediction/{prediction.pk}/')
