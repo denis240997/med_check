@@ -7,9 +7,3 @@ class FactorsSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Factors
         fields = '__all__'
-
-
-class PredictionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.Prediction
-        exclude = ['id']

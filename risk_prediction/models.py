@@ -18,8 +18,3 @@ class Factors(models.Model):
     diabetes = models.BooleanField()
     systolic_blood_pressure = models.FloatField()
     diastolic_blood_pressure = models.FloatField()
-
-
-class Prediction(models.Model):
-    # factors_batch = models.ForeignKey(Factors, on_delete=models.CASCADE, related_name='prediction')
-    risk_value = models.FloatField()
